@@ -1,0 +1,130 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: Arial;
+}
+body{
+    color: white;
+    background: black;
+}
+.card{
+    width: 1000px;
+    margin: auto;
+    border: solid;
+    border-radius: 25%;
+    --timing: linear(0, 0.3, 0.75, 1);
+	border-image-source: conic-gradient(from var(--a), red, lime, blue, red);
+	border-image-slice: 1;
+	border-image-width: 5px;
+	animation: move 5s infinite var(--timing);
+}
+@keyframes move {
+	from { --a: 0deg; }
+	to { --a: 360deg; }
+}
+@property --a {
+	syntax: "<angle>";
+	inherits: true;
+	initial-value: 0deg;
+}
+.header{
+    box-sizing: content-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(img/);
+    background-size: cover;
+    height: 200px;
+}
+.yo{
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+}
+.body{
+    color: white;
+    box-sizing: content-box;
+    margin: auto;
+    background: linear-gradient(black, rgb(10, 41, 10));
+}
+.section{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+.article-1{
+    width: 300px;
+    background: rgba(63, 63, 63, 0.800);
+    margin: auto;
+    text-align: center;
+    border-radius: 25px;
+}
+.article-1:hover{
+    transition: 0.5s;
+    width: 300px;
+    background: rgb(15, 15, 15);
+    margin: auto;
+    text-align: center;
+    border-radius: 25px;
+    padding: 5px;
+    border: solid;
+}
+.article-1 ul{
+    list-style: none;
+    padding: 3px;
+}
+.article-2{
+    width: 300px;
+    background: rgba(63, 63, 63, 0.800);
+    margin: auto;
+    text-align: center;
+    border-radius: 25px;
+}
+.article-2:hover{
+    transition: 0.5s ;
+    width: 300px;
+    background: rgb(15, 15, 15);
+    margin: auto;
+    text-align: center;
+    border-radius: 25px;
+    padding: 5px;
+    border: solid;
+}
+.article-2 ul{
+    list-style: none;
+    padding: 3px;
+}
+.article-3{
+    width: 300px;
+    background: rgba(63, 63, 63, 0.800);
+    text-align: center;
+    border-radius: 25px;
+}
+.article-3:hover{
+    transition: 0.5s;
+    width: 300px;
+    background: rgb(15, 15, 15);
+    text-align: center;
+    border-radius: 25px;
+    padding: 5px;
+    border: solid;
+}
+.formulario{
+    padding: 20px;
+    margin: 20px;
+}
+.formulario input{
+    border-radius: 25px;
+}
+.formulario textarea{
+    border-radius: 25px;
+}
+.F-div-1{
+    display: flex;
+    padding: 10px;
+}
+.F-div-2{
+    display: flex;
+    padding: 10px;
+}
